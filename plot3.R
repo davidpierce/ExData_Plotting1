@@ -14,7 +14,7 @@ if (!exists("power")) {
 }
 
 png("plot3.png")
-plot(power$Time, power$Sub_metering_1, type="l", col="black", ylab="Energy sub metering")
+plot(power$Time, power$Sub_metering_1, type="l", col="black", xlab="", ylab="Energy sub metering")
 lines(power$Time, power$Sub_metering_2, col="red")
 lines(power$Time, power$Sub_metering_3, col="blue")
 legend("topright", c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"),
